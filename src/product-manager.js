@@ -2,8 +2,8 @@ const fs = require('fs')
 
 class ProductManager {
 
-    constructor() {
-        this.path = './products.json'
+    constructor(path) {
+        this.path = path
     }
 
     writeFile = async (title, description, price, thumbnail, code, stock) => {
